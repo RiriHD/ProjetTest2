@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.8.8 on win32)" generated="20211117 15:24:43.703" rpa="false" schemaversion="2">
+<suite id="s1" name="LoginTests" source="C:\Users\admin\Documents\testAuto\Test_robots\ProjetTest\LoginTests">
+<suite id="s1-s1" name="Resource" source="C:\Users\admin\Documents\testAuto\Test_robots\ProjetTest\LoginTests\resource.robot">
+<test id="s1-s1-t1">
+<kw name="Valid Login" library="loginTest">
+<arg>${VALID USER}</arg>
+<arg>${VALID PASSWORD}</arg>
+<msg timestamp="20211117 15:24:52.119" level="INFO">valide login pass</msg>
+<status status="PASS" starttime="20211117 15:24:44.012" endtime="20211117 15:24:52.119"/>
+</kw>
+<status status="PASS" starttime="20211117 15:24:44.011" endtime="20211117 15:24:52.120"/>
+</test>
+<test id="s1-s1-t2">
+<kw name="Invalid Login" library="loginTest">
+<arg>${invalidlog}</arg>
+<arg>${VALID PASSWORD}</arg>
+<msg timestamp="20211117 15:25:00.116" level="INFO">invalide login pass</msg>
+<status status="PASS" starttime="20211117 15:24:52.124" endtime="20211117 15:25:00.116"/>
+</kw>
+<status status="PASS" starttime="20211117 15:24:52.123" endtime="20211117 15:25:00.117"/>
+</test>
+<test id="s1-s1-t3">
+<kw name="Invalid Login" library="loginTest">
+<arg>${VALID USER}</arg>
+<arg>${invalidpwd}</arg>
+<msg timestamp="20211117 15:25:08.365" level="INFO">invalide login pass</msg>
+<status status="PASS" starttime="20211117 15:25:00.121" endtime="20211117 15:25:08.365"/>
+</kw>
+<status status="PASS" starttime="20211117 15:25:00.120" endtime="20211117 15:25:08.369"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" starttime="20211117 15:24:43.738" endtime="20211117 15:25:08.403"/>
+</suite>
+<status status="PASS" starttime="20211117 15:24:43.706" endtime="20211117 15:25:08.408"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="LoginTests">LoginTests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Resource">LoginTests.Resource</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211117 15:25:00.119" level="WARN">Multiple test cases with name '${retourr}' executed in test suite 'LoginTests.Resource'.</msg>
+</errors>
+</robot>
